@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="0dp">
+
+    <!-- Header with red background -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="0dp"
+        android:background="@color/teal_200">
+
+        <!-- Add your header content here, e.g., an ImageView -->
+        <ImageView
+            android:id="@+id/detailImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="Map"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <!-- Rest of the dialog content (white background) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_below="@id/header"
+        android:orientation="vertical">
+
+        <!-- Add your content here, e.g., TextViews, Buttons, etc. -->
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/hint_enter_text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:minHeight="48dp"
+            android:hint="@string/data_date"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:minHeight="48dp"
+            android:hint="@string/data_time"
+            android:inputType="time" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_qty_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:textSize="24sp"
+                android:text="@string/title_quantity"/>
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="@string/title_plus" />
+            <TextView
+                android:id="@+id/tv_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="24sp"
+                android:text="@string/title_qty"/>
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="@string/title_minus" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center"
+            android:text="@string/btn_save" />
+    </LinearLayout>
+</RelativeLayout>

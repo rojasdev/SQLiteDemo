@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SQLite Demo</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_add">Add New</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="data_date">Select a date</string>
+    <string name="data_time">Select a time</string>
+    <string name="title_plus">+</string>
+    <string name="title_minus">-</string>
+    <string name="title_qty">0</string>
+    <string name="title_quantity">Quantity</string>
+    <string name="hint_enter_text">Enter a text</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Remove</string>
+    <string name="title_like_count">nnn Smiles</string>
+    <string name="title_post_caption">This is the caption for the post.</string>
+    <string name="default_content_description">An image appears here.</string>
+    <string name="title_post_username">User Name</string>
+
+</resources>
