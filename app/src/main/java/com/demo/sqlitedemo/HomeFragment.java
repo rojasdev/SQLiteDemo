@@ -153,7 +153,8 @@ public class HomeFragment extends Fragment implements DialogListener, ListViewCu
         DatabaseHelper dbHelper = new DatabaseHelper(getContext());
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String[] tblFields = {"id", "item_name", "item_date", "item_time", "item_quantity"};
-        Cursor cursor = db.query("TableItems", tblFields, null, null, null, null, null);
+        String orderBy = "id DESC"; // Ascending order by the "id" column
+        Cursor cursor = db.query("TableItems", tblFields, null, null, null, null, orderBy);
 
         // initialize array and store items
         JSONArray jsonArray = new JSONArray();
