@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    >
     <LinearLayout
         android:id="@+id/timePickerHeader"
         android:layout_width="match_parent"
@@ -13,13 +14,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="HH"/>
+            android:text="@string/title_hours"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="MM"/>
+            android:text="@string/title_minutes"/>
 
     </LinearLayout>
 
@@ -50,20 +51,23 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/timePickerLayout"
-        android:gravity="center">
+        android:gravity="center"
+        >
     <Button
         android:id="@+id/okButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OK"
-        android:layout_margin="20dp"/>
+        android:text="@string/btn_okay"
+        android:layout_margin="20dp"
+        />
 
-    <Button
+        <Button
         android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cancel"
-        android:layout_margin="20dp"/>
+        android:text="@string/btn_cancel"
+        android:layout_margin="20dp"
+        />
     </LinearLayout>
 
 </RelativeLayout>

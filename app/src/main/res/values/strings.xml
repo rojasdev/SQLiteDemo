@@ -13,9 +13,13 @@
     <string name="hint_enter_text">Enter a text</string>
     <string name="btn_save">Save</string>
     <string name="btn_delete">Remove</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_okay">OK</string>
     <string name="title_like_count">nnn Smiles</string>
     <string name="title_post_caption">This is the caption for the post.</string>
     <string name="default_content_description">An image appears here.</string>
     <string name="title_post_username">User Name</string>
+    <string name="title_hours">HH</string>
+    <string name="title_minutes">MM</string>
 
 </resources>
